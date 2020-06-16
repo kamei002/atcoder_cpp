@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  cpp:
+    tty: true
+    build: ./docker/cpp/
+    volumes:
+      - ./src:/home/src
+    working_dir: /home/src
+    environment:
+      - CXX=g++-9
+      - CC=gcc-9
+      - CMAKE_INCLUDE_PATH=/home/cpp/boost
+      - CMAKE_LIBRARY_PATH=/home/cpp/boost/lib
+
