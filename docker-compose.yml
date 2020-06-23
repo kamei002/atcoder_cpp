@@ -11,4 +11,5 @@ services:
       - CC=gcc-9
       - CMAKE_INCLUDE_PATH=/home/cpp/boost
       - CMAKE_LIBRARY_PATH=/home/cpp/boost/lib
+      - DEBUG=true
 

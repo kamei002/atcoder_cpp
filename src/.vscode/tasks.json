@@ -6,13 +6,9 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
+                "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe",
-                "${file}"
-                // "${file}",
-                // "&&",
-                // "${fileDirname}/${fileBasenameNoExtension}.exe",
-
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
